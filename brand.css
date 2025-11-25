@@ -1,0 +1,67 @@
+/* ========================================
+   RINGSIDE VR - CUSTOM BRANDING
+   Hide VDO.Ninja branding completely
+======================================== */
+
+/* Hide VDO.Ninja logo and branding */
+.logo,
+.branding,
+#info > div:first-child,
+.vdo-ninja-link,
+a[href*="vdo.ninja"],
+.header-logo {
+    display: none !important;
+}
+
+/* Hide footer links */
+footer a[href*="github.com"],
+footer a[href*="discord"],
+.footer-links {
+    display: none !important;
+}
+
+/* Custom color scheme - Ringside VR */
+:root {
+    --blue-corner: #0066cc;
+    --red-corner: #cc0000;
+    --ringside-dark: #1a1a1a;
+    --ringside-gold: #ffd700;
+}
+
+/* Dark theme for all pages */
+body {
+    background: var(--ringside-dark) !important;
+    font-family: 'Russo One', 'Teko', sans-serif !important;
+}
+
+/* Custom header styling */
+header {
+    background: linear-gradient(180deg, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.7) 100%) !important;
+    border-bottom: 3px solid var(--ringside-gold) !important;
+}
+
+/* Hide version number */
+.version-info,
+span[class*="version"] {
+    display: none !important;
+}
+
+/* Custom button styling */
+button,
+.button,
+input[type="button"] {
+    background: var(--blue-corner) !important;
+    border: 2px solid var(--ringside-gold) !important;
+    font-family: 'Teko', sans-serif !important;
+    letter-spacing: 2px !important;
+}
+
+button:hover {
+    background: var(--red-corner) !important;
+}
+
+/* Hide "Powered by VDO.Ninja" or similar text */
+*[class*="powered"],
+*[class*="credit"] {
+    display: none !important;
+}
