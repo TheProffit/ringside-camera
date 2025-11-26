@@ -3,6 +3,19 @@
 // Remove any remaining VDO.Ninja references
 // ========================================
 
+// Replace favicon
+(function() {
+    // Remove existing favicons
+    const links = document.querySelectorAll('link[rel*="icon"]');
+    links.forEach(link => link.remove());
+    
+    // Add boxing glove emoji as favicon
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🥊</text></svg>';
+    document.head.appendChild(link);
+})();
+
 (function() {
     'use strict';
     
