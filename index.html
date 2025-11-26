@@ -15,6 +15,22 @@
 			}
 		
 		</script>
+
+		<script>
+// Ringside VR - Detect corner theme from URL IMMEDIATELY
+(function() {
+    const url = window.location.href.toLowerCase();
+    const html = document.documentElement;
+    
+    if (url.includes('blue-fighter') || url.includes('blue-coach') || url.includes('label=blue')) {
+        html.className = 'blue-corner';
+    } else if (url.includes('red-fighter') || url.includes('red-coach') || url.includes('label=red')) {
+        html.className = 'red-corner';
+    } else if (url.includes('director')) {
+        html.className = 'director';
+    }
+})();
+</script>
 		<style>
 			html {
 				background-color: #0000;
@@ -35,7 +51,7 @@
 		<link rel="manifest" href="manifest.json">
 		
 		<!-- Primary Meta Tags -->
-		<title>VDO.Ninja</title>
+		<title>Ringside VR</title>
 		<meta id="metaTitle" name="title" content="VDO.Ninja" />
 		<meta name="description" content="Bring live video from your smartphone, computer, or friends directly into your Studio. 100% free." />
 		<meta name="author" content="Steve Seguin" />
@@ -47,10 +63,7 @@
 		<script type="text/javascript" crossorigin="anonymous" src="./thirdparty/adapter.js"></script>
 		
 		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
-		<link id="favicon1" rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png" />
-		<link id="favicon2" rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png" />
-		<link id="favicon3" rel="icon" href="./media/favicon.ico" />
-		<link id="thumbnailUrl" itemprop="thumbnailUrl" href="./media/vdoNinja_logo_full.png" />
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>">
 		<link rel="alternate" type="text/markdown" href="/rawdoc.md" title="Developer and User Documentation">
 
 		<!-- X (Twitter) Card Tags -->
