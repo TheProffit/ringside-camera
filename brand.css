@@ -1,67 +1,258 @@
 /* ========================================
-   RINGSIDE VR - CUSTOM BRANDING
-   Hide VDO.Ninja branding completely
+   RINGSIDE VR - COMPLETE BRANDING OVERRIDE
+   Tale of the Tape Aesthetic
 ======================================== */
 
-/* Hide VDO.Ninja logo and branding */
+/* Import Ringside VR Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Russo+One&display=swap');
+
+/* ========================================
+   HIDE ALL VDO.NINJA BRANDING
+======================================== */
+
+/* Hide logo, header, footer */
 .logo,
 .branding,
-#info > div:first-child,
-.vdo-ninja-link,
+#info,
+header,
+footer,
+.header-content,
+.footer-content,
 a[href*="vdo.ninja"],
-.header-logo {
-    display: none !important;
-}
-
-/* Hide footer links */
-footer a[href*="github.com"],
-footer a[href*="discord"],
-.footer-links {
-    display: none !important;
-}
-
-/* Custom color scheme - Ringside VR */
-:root {
-    --blue-corner: #0066cc;
-    --red-corner: #cc0000;
-    --ringside-dark: #1a1a1a;
-    --ringside-gold: #ffd700;
-}
-
-/* Dark theme for all pages */
-body {
-    background: var(--ringside-dark) !important;
-    font-family: 'Russo One', 'Teko', sans-serif !important;
-}
-
-/* Custom header styling */
-header {
-    background: linear-gradient(180deg, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.7) 100%) !important;
-    border-bottom: 3px solid var(--ringside-gold) !important;
-}
-
-/* Hide version number */
+a[href*="github.com/steveseguin"],
 .version-info,
-span[class*="version"] {
+[class*="version"],
+[class*="powered"],
+[class*="credit"],
+.helpbutton,
+#helpbutton {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide top navigation/menu */
+nav,
+.navigation,
+.menu-bar,
+#menuButton,
+.hamburger {
     display: none !important;
 }
 
-/* Custom button styling */
+/* Hide settings/gear icons */
+.settings-icon,
+[class*="settings"],
+.gear-icon {
+    display: none !important;
+}
+
+/* ========================================
+   RINGSIDE VR COLOR SCHEME
+======================================== */
+
+:root {
+    --ringside-blue: #0066cc;
+    --ringside-red: #cc0000;
+    --ringside-gold: #ffd700;
+    --ringside-dark: #1a1a1a;
+    --ringside-darker: #0d0d0d;
+    --ringside-gray: #333333;
+}
+
+/* ========================================
+   MAIN STYLING
+======================================== */
+
+body {
+    background: linear-gradient(135deg, var(--ringside-darker) 0%, var(--ringside-dark) 100%) !important;
+    font-family: 'Teko', sans-serif !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Full screen video container */
+#container,
+#gridlayout,
+.container,
+.video-container {
+    background: var(--ringside-dark) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ========================================
+   VIDEO TILES STYLING
+======================================== */
+
+/* Style individual video tiles */
+.video-tile,
+[id*="videosource"],
+[class*="video"] {
+    border: 4px solid var(--ringside-gold) !important;
+    border-radius: 8px !important;
+    background: var(--ringside-darker) !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Blue corner video borders */
+[data-label*="blue" i],
+[data-label*="Blue" i],
+[id*="blue" i] {
+    border-color: var(--ringside-blue) !important;
+    box-shadow: 0 0 20px rgba(0, 102, 204, 0.5) !important;
+}
+
+/* Red corner video borders */
+[data-label*="red" i],
+[data-label*="Red" i],
+[id*="red" i] {
+    border-color: var(--ringside-red) !important;
+    box-shadow: 0 0 20px rgba(204, 0, 0, 0.5) !important;
+}
+
+/* ========================================
+   LABELS & TEXT
+======================================== */
+
+/* Video labels/name tags */
+.label,
+.nametag,
+[class*="label"],
+[class*="name"] {
+    background: rgba(26, 26, 26, 0.95) !important;
+    color: var(--ringside-gold) !important;
+    font-family: 'Russo One', sans-serif !important;
+    font-size: 18px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    border: 2px solid var(--ringside-gold) !important;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
 button,
 .button,
-input[type="button"] {
-    background: var(--blue-corner) !important;
-    border: 2px solid var(--ringside-gold) !important;
+input[type="button"],
+input[type="submit"],
+[class*="btn"] {
+    background: linear-gradient(135deg, var(--ringside-blue) 0%, #004999 100%) !important;
+    border: 3px solid var(--ringside-gold) !important;
+    color: #fff !important;
     font-family: 'Teko', sans-serif !important;
-    letter-spacing: 2px !important;
+    font-size: 20px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    padding: 12px 24px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4) !important;
 }
 
-button:hover {
-    background: var(--red-corner) !important;
+button:hover,
+.button:hover {
+    background: linear-gradient(135deg, var(--ringside-red) 0%, #990000 100%) !important;
+    box-shadow: 0 6px 20px rgba(204, 0, 0, 0.6) !important;
+    transform: translateY(-2px) !important;
 }
 
-/* Hide "Powered by VDO.Ninja" or similar text */
-*[class*="powered"],
-*[class*="credit"] {
+/* ========================================
+   CUSTOM BRANDING OVERLAY
+======================================== */
+
+/* Add Ringside VR watermark */
+body::before {
+    content: 'RINGSIDE VR';
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Russo One', sans-serif;
+    font-size: 28px;
+    color: var(--ringside-gold);
+    text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.8),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 6px;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+/* Add "LIVE" indicator */
+body::after {
+    content: '● LIVE';
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    color: #ff0000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    z-index: 999999;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* ========================================
+   DIRECTOR VIEW GRID
+======================================== */
+
+/* Director mode - organize cameras in grid */
+#gridlayout {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    padding: 80px 20px 20px 20px !important;
+    max-width: 1920px !important;
+    margin: 0 auto !important;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+    body::before {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    #gridlayout {
+        grid-template-columns: 1fr !important;
+        padding: 60px 10px 10px 10px !important;
+    }
+}
+
+/* ========================================
+   CLEAN UP ANY REMAINING UI
+======================================== */
+
+/* Hide control panels, stats, quality indicators */
+.stats,
+.controls,
+.control-panel,
+.quality-indicator,
+[class*="stat"],
+[class*="control"] {
     display: none !important;
+}
+
+/* Clean video playback */
+video {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
 }
