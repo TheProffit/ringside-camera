@@ -443,3 +443,75 @@ h2::after {
         color: black !important;
     }
 }
+
+/* ----- Fix Director View Video Area ----- */
+
+/* Make the director layout use more vertical space */
+.directorsgrid {
+    min-height: calc(100vh - 200px) !important;
+    padding-bottom: 80px !important;
+}
+
+/* Give video containers more height */
+.directorsgrid .vidcon {
+    min-height: 180px !important;
+}
+
+.directorsgrid .vidcon video {
+    max-height: 200px !important;
+    min-height: 120px !important;
+}
+
+/* Reduce the header/links section height to give more room */
+#roomHeader {
+    max-height: 180px !important;
+}
+
+#directorLinks1,
+#directorLinks2 {
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+.directorBlock {
+    padding: 10px 15px !important;
+}
+
+.directorBlock h2 {
+    margin: 5px 0 !important;
+    font-size: 1.1em !important;
+}
+
+/* Make the guest feeds area expand */
+#guestFeeds {
+    min-height: 300px !important;
+    flex-grow: 1 !important;
+}
+
+/* Compact the invite/scene link text */
+.directorBlock span {
+    font-size: 0.9em !important;
+    line-height: 1.3 !important;
+}
+
+.directorBlock a {
+    font-size: 0.85em !important;
+    word-break: break-all !important;
+}
+
+/* Move control buttons up slightly so they don't overlap */
+#controlButtons {
+    bottom: 5px !important;
+}
+
+/* Reduce padding on the control bar */
+#subControlButtons {
+    padding: 3px 8px !important;
+}
+
+#subControlButtons div {
+    min-width: 40px !important;
+    min-height: 40px !important;
+    margin: 3px !important;
+}
+
