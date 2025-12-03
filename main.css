@@ -57,8 +57,8 @@
 	--a-active: #0165b5;
 
 	/* -- Box colors */
-	--director-box: rgb(165 119 18);
-	--codirector-box: rgb(67 122 213);
+	--director-box: rgb(180 0 0);
+	--codirector-box: rgb(201 162 39);
 
 	--director-dark-box: rgb(165 119 18);
 	--codirector-dark-box: rgb(129 127 127);
@@ -67,12 +67,12 @@
 	--rtl-or-ltr: left;
 	
 	/* Original colors */
-	--background-color: #141926;
+	--background-color: #1a1a1a;
 	--dark-background-color: #02050c;
 	--container-color: #373737;
 	--button-color: #2A2A2A;
-	--blue-accent: #4a4c63;
-	--red-accent: #553737;
+	--blue-accent: #c9a227;
+	--red-accent: #8b0000;
 	--light-grey: #ddd;
 	--near-black: #02050c;
 	--green-accent: #3f4f50;
