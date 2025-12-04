@@ -7164,3 +7164,88 @@ input[type="range"]::-moz-range-progress { height: 6px; background: var(--accent
     border: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 10px 28px rgba(0,0,0,0.18);
 }
+
+/* ========================================
+   RINGSIDE VR - CONTROL ROOM STYLING
+======================================== */
+
+/* Branded Header Bar */
+#header {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%) !important;
+    border-bottom: 3px solid #e63a23 !important;
+    padding: 12px 20px !important;
+}
+
+/* Style the room name in header */
+#header #head1 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* Links section header */
+.hideLinksClass {
+    background: #1a1a1a !important;
+    border: 1px solid #3a3a3a !important;
+    border-left: 4px solid #e63a23 !important;
+}
+
+/* Invite Guest box - Blue accent */
+.directorContainer:nth-child(1) {
+    border: 2px solid #2196F3 !important;
+    border-left: 4px solid #2196F3 !important;
+}
+
+/* Capture Scene box - Red accent */
+.directorContainer:nth-child(2) {
+    border: 2px solid #e63a23 !important;
+    border-left: 4px solid #e63a23 !important;
+}
+
+/* Guest feeds container */
+#guestFeeds {
+    background: #1a1a1a !important;
+    border: 3px solid #e63a23 !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+}
+
+/* Individual guest video containers */
+.directorsgrid .vidcon {
+    background: #2a2a2a !important;
+    border: 2px solid #3a3a3a !important;
+    border-radius: 6px !important;
+}
+
+/* Control bar at bottom */
+#subControlButtons {
+    background: #1a1a1a !important;
+    border: 2px solid #3a3a3a !important;
+    border-radius: 12px !important;
+}
+
+#subControlButtons div {
+    background: #2a2a2a !important;
+}
+
+#subControlButtons div:hover {
+    background: #3a3a3a !important;
+}
+
+/* Text colors for light background */
+body {
+    color: #1a1a1a !important;
+}
+
+/* Keep text white in dark containers */
+.directorContainer,
+.hideLinksClass,
+#guestFeeds,
+#header {
+    color: #ffffff !important;
+}
+
+.directorContainer label,
+.directorContainer span {
+    color: #ffffff !important;
+}
