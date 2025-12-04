@@ -7190,34 +7190,48 @@ input[type="range"]::-moz-range-progress { height: 6px; background: var(--accent
     border-left: 4px solid #e63a23 !important;
 }
 
-/* Both director containers - white background */
+/* Both director containers - white background with red left accent */
 .directorContainer {
     background: #ffffff !important;
     border: 1px solid #d0d0d0 !important;
+    border-left: 4px solid #e63a23 !important;
     border-radius: 8px !important;
 }
 
-/* Invite Guest box - Blue left accent */
-.directorContainer:nth-child(1) {
-    border-left: 4px solid #2196F3 !important;
+/* Remove the blue/green backgrounds from inner blocks */
+.directorBlock {
+    background-color: #ffffff !important;
 }
 
-/* Capture Scene box - Red left accent */
-.directorContainer:nth-child(2) {
-    border-left: 4px solid #e63a23 !important;
+.directorBlock:nth-child(1),
+.directorBlock:nth-child(2),
+.directorBlock:nth-child(3),
+.directorBlock:nth-child(4) {
+    background-color: #ffffff !important;
 }
 
 /* Fix text color in white boxes */
 .directorContainer,
 .directorContainer label,
 .directorContainer span,
-.directorContainer h2 {
+.directorContainer h2,
+.directorBlock,
+.directorBlock label,
+.directorBlock span,
+.directorBlock h2 {
     color: #1a1a1a !important;
 }
 
-/* Keep the header titles colored */
-.directorContainer h2 {
-    font-weight: 700 !important;
+/* Buttons - dark style */
+.directorBlock button {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #1a1a1a !important;
+    border-radius: 4px !important;
+}
+
+.directorBlock button:hover {
+    background-color: #333333 !important;
 }
 
 /* Guest feeds container */
@@ -7248,22 +7262,4 @@ input[type="range"]::-moz-range-progress { height: 6px; background: var(--accent
 
 #subControlButtons div:hover {
     background: #3a3a3a !important;
-}
-
-/* Text colors for light background */
-body {
-    color: #1a1a1a !important;
-}
-
-/* Keep text white in dark containers */
-.directorContainer,
-.hideLinksClass,
-#guestFeeds,
-#header {
-    color: #ffffff !important;
-}
-
-.directorContainer label,
-.directorContainer span {
-    color: #ffffff !important;
 }
