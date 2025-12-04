@@ -7190,16 +7190,34 @@ input[type="range"]::-moz-range-progress { height: 6px; background: var(--accent
     border-left: 4px solid #e63a23 !important;
 }
 
-/* Invite Guest box - Blue accent */
+/* Both director containers - white background */
+.directorContainer {
+    background: #ffffff !important;
+    border: 1px solid #d0d0d0 !important;
+    border-radius: 8px !important;
+}
+
+/* Invite Guest box - Blue left accent */
 .directorContainer:nth-child(1) {
-    border: 2px solid #2196F3 !important;
     border-left: 4px solid #2196F3 !important;
 }
 
-/* Capture Scene box - Red accent */
+/* Capture Scene box - Red left accent */
 .directorContainer:nth-child(2) {
-    border: 2px solid #e63a23 !important;
     border-left: 4px solid #e63a23 !important;
+}
+
+/* Fix text color in white boxes */
+.directorContainer,
+.directorContainer label,
+.directorContainer span,
+.directorContainer h2 {
+    color: #1a1a1a !important;
+}
+
+/* Keep the header titles colored */
+.directorContainer h2 {
+    font-weight: 700 !important;
 }
 
 /* Guest feeds container */
