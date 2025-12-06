@@ -7263,3 +7263,52 @@ input[type="range"]::-moz-range-progress { height: 6px; background: var(--accent
 #subControlButtons div:hover {
     background: #3a3a3a !important;
 }
+
+/* ============================================
+   RINGSIDE VR - HEADER BRANDING (CSS Override)
+   ============================================ */
+
+/* Hide original logo text */
+#logoname > span {
+    font-size: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Add RINGSIDE VR branding */
+#logoname::after {
+    content: "RINGSIDE VR";
+    font-size: 16px !important;
+    font-weight: bold !important;
+    visibility: visible !important;
+    color: #ffffff;
+}
+
+/* Color the "VR" part red - using background clip trick */
+#logoname {
+    background: linear-gradient(90deg, #ffffff 62%, #e63a23 62%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+}
+
+/* Add boxing glove to Control Center text */
+#head2::before {
+    content: "🥊 ";
+}
+
+/* Optional: LIVE badge next to logo */
+#logoname::before {
+    content: "● LIVE";
+    background: #e63a23;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
