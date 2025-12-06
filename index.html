@@ -107,10 +107,11 @@
 		<div id="header">
 			
 			<a id="logoname" href="./" style="text-decoration: none; color: white; margin: 0 2px 0px 8px;">
-				<span data-translate="logo-header">
-					<span id="qos">V</span>DO.Ninja 
-				</span>
-			</a>
+    <span data-translate="logo-header">
+        <span style="color: #ffffff; font-weight: bold;">RINGSIDE</span><span style="color: #e63a23; font-weight: bold;"> VR</span>
+    </span>
+</a>
+<span id="liveBadge" class="hidden" style="background: #e63a23; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-left: 10px; animation: pulse 2s infinite;">● LIVE</span>
 			<div id="head1">
 				<input type="text" autocorrect="off" autocapitalize="none" id="joinroomID" name="joinroomID" tabindex="1" size="22" placeholder="Join by Room Name here" alt="Enter a room name to join" title="Enter a room name to quick join" onkeyup="jumptoroom(event)"/>
 				<button onclick="jumptoroom();" id='jumptoroomButton' role="button" aria-pressed="false" tabindex="1" alt="Join room" title="Join room" >GO</button>
@@ -138,7 +139,7 @@
 			</div>
 			<div id="head4" style="display: inline-block;" class="hidden">
 				<span>
-					<span data-translate="you-are-in-the-control-center">Control center for room:</span>
+					<span data-translate="you-are-in-the-control-center">🥊 Control center for room:</span>
 					
 					<div id="dirroomid" style="font-size: 140%; color: #99c; display: inline-block;"></div>
 					<span id="saveRoom" onclick="saveRoom(this)" style='cursor:pointer;margin-left:10px;' title="Will remember the room, prompting you the next time you visit if you wish to load this director's room again">💾</span>
